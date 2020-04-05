@@ -136,12 +136,14 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="match_parent"
-        android:layout_height="481dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider2">
+        app:layout_constraintTop_toBottomOf="@id/divider2"
+        app:layout_constraintVertical_bias="0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -162,11 +164,6 @@
                 android:layout_marginStart="16dp"
                 android:text="Food" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Volunteering" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -216,19 +213,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
+                android:text="Lying" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Sickness" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
                 android:text="Laziness" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Crying" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="Hospital" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -252,6 +250,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginTop="8dp" />
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -297,44 +296,57 @@
                 android:layout_marginStart="16dp"
                 android:text="Teaching" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp" />
+
 
         </LinearLayout>
+
     </ScrollView>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView8"
         android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.121"
+        app:layout_constraintHorizontal_bias="0.015"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
+        app:layout_constraintVertical_bias="0.099"
         app:srcCompat="@drawable/facebook" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/imageView9"
         android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.349"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.199"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/instagram" />
+        app:layout_constraintVertical_bias="0.099"
+        app:srcCompat="@drawable/slack" />
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/imageView10"
         android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/scrollView3"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/slack" />
+        app:layout_constraintVertical_bias="0.099"
+        app:srcCompat="@drawable/instagram" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
